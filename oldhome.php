@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	
+<link rel='icon' href='/img/LC_1024x1024_Transparent.ico' type='image/x-icon'/ >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>LightcraftMC | Minecraft Bedrock Edition Server</title>
+<meta name="title" content="LightcraftMC | Minecraft Bedrock Edition Server">
+
+<meta name="description" content="LightCraft is a minecraft bedrock edition server with factions, survival, custom minigames, and much more! join now, IP mc.lightcraftmc.com port:40681">
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+span 
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  background-color: #1882d9;
+}
+
+.topnav #myLinks {
+  display: none;
+
+ 
+}
+.topnav #myLinks:hover {
+    
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: #2c98f2;
+}
+
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #1263a6;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.hover:hover {
+    margin-top: -10px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="mobile-container">
+
+
+<div class="topnav">
+  <a href="http://lightcraftmc.com" class="active"><img src="http://lightcraftmc.com/img/LC_1024x1024_Transparent.ico" height="25px" width="25px"></a>
+  <div id="myLinks">
+    <a href="http://lightcraftmc.com">Home</a>
+    <a href="http://lightcraftmc.com/apply.php">Apply</a>
+    <a href="http://vote.lightcraftmc.com">Vote</a>
+    <a href="http://shop.lightcraftmc.com">Shop</a>
+    <a href="http://discord.lightcraftmc.com">Discord</a>
+    <a href="http://lightcraftmc.com/forums">Forums</a>
+    <a href="/rules.html">Rules</a>
+     <a href="/news.html">News</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+<div class="w3-container ">
+    <!-- hi, I used w3 style sheet to help make this website btw, heres link to it-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div class="w3-container">
+<center><h1>LightCraftMC</h1>
+  
+<span onclick="CopyIP()" style="color:#0096fa">MC.LIGHTCRAFTMC.COM</span>
+	<script src="/scripts/jquery.js"></script>
+	<script>
+		$.get('https://lightcraftsapithing.herokuapp.com/api/discord/members', (data)=> {
+			document.getElementById('dis-all').innerHTML = data
+		})
+	</script>
+<br><span class=hide-onhover>COPIED IP</span>
+<script>
+function CopyIP(){
+    
+     var theText = 'MC.LIGHTCRAFTMC.COM:40681';
+ 
+    
+     var hiddenCopy = document.createElement('div');
+    
+     hiddenCopy.innerHTML = theText;
+    
+     hiddenCopy.style.position = 'absolute';
+     hiddenCopy.style.left = '-9999px';
+ 
+   
+     var currentRange;
+     if(document.getSelection().rangeCount > 0)
+     {
+     
+          currentRange = document.getSelection().getRangeAt(0);
+          
+          window.getSelection().removeRange(currentRange);
+     }
+     else
+     {
+          
+          currentRange = false;
+     }
+ 
+   
+     document.body.appendChild(hiddenCopy);
+    
+     var CopyRange = document.createRange();
+   
+     CopyRange.selectNode(hiddenCopy);
+   
+     window.getSelection().addRange(CopyRange);
+ 
+
+     try
+     {
+         
+          document.execCommand('copy');
+     }
+     catch(err)
+     {
+          window.alert("Your Browser Doesn't support copying our IP! Error : " + err);
+     }
+    
+     window.getSelection().removeRange(CopyRange);
+    
+     document.body.removeChild(hiddenCopy);
+ 
+     
+     if(currentRange)
+     {
+          window.getSelection().addRange(currentRange);
+     }
+    
+}
+
+</script></center>
+ 
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+ <center> <img class="mySlides" src="/img/LC_1024x1024_Transparent.ico" style="width:67%;"></center>
+  <img class="mySlides" src="/img/2020-07-14.png" style="width:100%">
+  <img class="mySlides" src="/img/2020-07-14 (1).png" style="width:100%">
+  
+    <div class="w3-display-left fa angle-double-left slide-button" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="   w3-display-right fa angle-double-right slide-button" style="padding:15px;"onclick="plusDivs(1)">&#10095;</div>
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+<style>
+.hide-onhover {
+color: white;
+}
+.hide-onhover:hover {
+    color: black;
+}
+.slide-button { 
+    padding:15px;
+    background-color: #0099ff;
+    color: white;
+    cursor: pointer;
+}
+.slide-button:hover {
+    background-color: #008eed;
+}
+.w3-badge {height:13px;width:13px;padding:0;cursor:pointer;}
+.social-link:hover {
+    border-radius: 10px;
+}
+.link {
+    text-decoration: none;
+}
+.link:hover {
+
+
+color: #FA9F01;
+}
+.home-div {
+background-color: #cccccc;  
+}
+.dis-button {
+    background-color: #f75814;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dis-button:hover {
+background-color: #db4d0f;
+color: white;
+text-decoration: none;
+}
+    .button {
+        padding: 15px 25px;
+        background-color: #197df7;
+        border-radius: 40px;
+        text-decoration: none;
+        color: white;
+        font-weight: 550;
+        font-family:verdana;
+    }
+    .button:hover {
+        padding: 20px 28px;
+        background-color: #176bd1;
+        color: white;
+    }
+    .feat {
+        
+  font-family: "Times New Roman", Times, serif;
+
+    }
+    p {
+        color: #9c9c9c;
+    }
+    .font-times {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+    .font-charc {
+        font-family: Impact, Charcoal, sans-serif;
+    }
+</style>
+
+
+  <br>
+  <center>
+    <div class="buttons">
+<center>
+
+      <a href="minecraft://?addExternalServer=LightCraftMC|mc.lightcraftmc.com:40681" class="blob-btn">
+    Join Server
+    <span class="blob-btn__inner">
+      <span class="blob-btn__blobs">
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+      </span>
+    </span>
+  </a><br><br><br>
+      <a href="http://discord.lightcraftmc.com" class="blob-btn margin-btn">
+    Join Discord
+    <span class="blob-btn__inner">
+      <span class="blob-btn__blobs">
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+      </span>
+    </span>
+  </a>
+ 
+</center>
+<br>
+    	   <h3><li class="fa fa-gamepad" style="padding:10px;font-size:15px;width:40px;text-align:center;text-decoration:none;margin:3px 1px;background:#16b2f0;color:white;"></li><span style="color:black;"><b id="num">loading...</b> players online</span>
+	<script src="/scripts/jquery.js"></script>
+	<script>
+		$.get('https://lightcraftsapithing.herokuapp.com/api/server/online', (data)=> {
+			document.getElementById('num').innerHTML = data
+		})
+	</script>&nbsp; &nbsp;
+	    <br><li class="fab fa-discord" style="padding:10px;font-size:15px;width:40px;text-align:center;text-decoration:none;margin:3px 1px;background:#7289DA;color:white;"> </li><span style="color:black"><b id="dis-all">loading...</b> Discord members</span></h3></div>
+	<script src="/scripts/jquery.js"></script>
+	<script>
+		$.get('https://lightcraftsapithing.herokuapp.com/api/discord/members', (data)=> {
+			document.getElementById('dis-all').innerHTML = data
+		})
+	</script>
+    
+
+<center>
+
+<style>
+.margin-top {
+il do l8r
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.blob-btn {
+text-decoration: none;
+}
+.buttons {
+  
+  text-align: center;
+  border-radius: 30px;
+}
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0505A9;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.blob-btn:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid ;
+  border-radius: 30px;
+}
+.blob-btn:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover {
+  color: #FFFFFF;
+  border-radius: 30px;
+}
+.blob-btn:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url('#goo');
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: #0096fa;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+@supports (filter: url('#goo')) {
+  .blob-btn__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+@supports (filter: url('#goo')) {
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+</style>
+<div style="background-color:#2b2b2b;color:white" class="feat">
+        <h1>Welcome to LightCraftMC</h1>
+        <p class="font-times">an innovative server for the bedrock edition of minecraft</p>
+<h2>Games</h2>
+<p>Inlcuding Survival, Factions, Kitpvp, Skywars, Whats the build (a lightcraft original), hide and seek, parkour, uhc (coming soon), the bridge (coming soon)</p>
+<h2>Helpful Staff</h2>
+<p>Need help? Our moderators are here to help you out, just shoot us a dm on our <a href="http://discord.lightcraftmc.com" class="link">discord</a></p>
+
+<div style="background-color:#7279DA;color:white">
+    <div style="background-color:#404547">
+    <h1>Use the forums</h1><p style="color:white;font-family: Arial, Helvetica, sans-serif;"><b>Talk when you can't play</b></p></b1><br> <a href="http://lightcraftmc.com/forums" class="dis-button">Forums</a><br><br>
+</div>
+    <h2 style="font-family: Arial, Helvetica, sans-serif;"><b>Join our Discord Server</b></h2>
+    <span style="color:#2b2b2b"><b>Chat with the community</b></span><br>
+    <iframe src="https://discord.com/widget?id=702119037634871339&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe><br><br>
+    <a href="http://discord.lightcraftmc.com" class="dis-button">Start chatting</a>
+    
+    <br><br>
+</div>
+
+
+
+
+&copy; LightCraftMC 2018-2020<br>
+site was programmed by Darth Makroth<br><img src="/img/LC_1024x1024_Transparent.ico" height="50px", width="50px"><br><a href="https://lightcraftsapithing.herokuapp.com" class="link">API</a> by <a href="https://mcpedl.com/user/skybird23333/?cookie_check=1" class="link">Skybird</a>&nbsp; &nbsp;<a href="privacy.html" class="link">Privacy Policy</a>&nbsp; &nbsp;<a href="news.html" class="link">News</a><br>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://kit.fontawesome.com/229ab17d50.js" crossorigin="anonymous"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+
+    <div class="col-md-12">
+      <ul class="social-network social-circle">
+        <li><a href="mailto:lightcraftstudios0@gmail.com" class="icoGmail" title="Email"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="/join" class="icoTwitter" title="Server"><i class="fa fa-gamepad"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCBoDiCVm7_yFVjOG7pBVAUg" class="icoYt" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="http://discord.lightcraftmc.com" class="icoDis" title="Discord"><i class="fab fa-discord"></i></a></li>
+        <li><a href="https://twitter.com/lightcraftmc1" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+</div>
+<style>
+   .
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoYt:hover {
+  background-color:  #FF0000;
+}
+
+.social-network a.icoGmail:hover {
+  background-color: #d14d4d;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoDis:hover {
+  background-color: #7289DA
+}
+
+.social-network a.icoVimeo:hover {
+  background-color: #0590B8;
+}
+
+.social-network a.icoyt:hover {
+  background-color: #ff0000;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.icoYt .icoDis .icoTwitter .icoGmail {
+  background-color: #3A5FCD;
+}
+
+
+</style>
+<script>
+    window.alert = function() {};
+var defaultCSS = document.getElementById('bootstrap-css');
+
+function changeCSS(css) {
+  if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
+  else $('head > link').filter(':first').replaceWith(defaultCSS);
+}
+$(document).ready(function() {
+  var iframe_height = parseInt($('html').height());
+  window.parent.postMessage(iframe_height, 'http://bootsnipp.com');
+});
+
+</script></center>
+
+</body>
+</html>
+<style>
+    .top {
+         position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+    }
+</style>
+<div class="top">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="up">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+    </filter>
+  </defs>
+</svg>
+</div>
